@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khaanpin Online Food and Grocery Delivery</title>
+    <link rel="shortcut icon" href="/images/favicon/favicon-16x16.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon/favicon-96x96.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <section class="slider">
+        <div class="slider__container">
+            <img src="/images/bannerSlider/pizza.jpg" alt="slide1" class="slider__image">
+        </div>
+        <div class="slider__container">
+            <img src="/images/bannerSlider/mart_et1UOSj.jpg" alt="slide2" class="slider__image">
+        </div>
+        <div class="slider__container">
+            <img src="/images/bannerSlider/pizza.jpg" alt="slide3" class="slider__image">
+        </div>
+        <div class="slider__container">
+            <img src="/images/bannerSlider/Untitled-1_KSRrxRo.jpg" alt="slide4" class="slider__image">
+        </div>
+        <span class="slider__prev arrow" onclick="controller(-1)">&#10094;</span>
+        <span class="slider__next arrow" onclick="controller(1)">&#10095;</span>
+    </section>
+
+    <section class="header">
+        <nav class="topBar">
+            <div class="topBar-left">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/khaanpin3-logo.png" alt="Khaanpin" class="logo__image">
+                    </a>
+                </div>
+                <div class="buttonWrapper">
+                    <button class="buttonLocation buttonLocation--active">KATHMANDU</button>
+                    <button class="buttonLocation">POKHARA</button>
+                </div>
+            </div>
+            <div class="topBar-right">
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="search">
+            <p class="static-text">Khaanpin Bhayo?</p>
+            <input type="text" name="searchbar" id="searchbar" placeholder="Search here ....">
+            <div class="searchContainer">
+                <a href="#">
+                    <div class="sectionContainer__box">
+                        <img src="/images/searchContainer/food1.jpg" alt="cooked-food">
+                        <p class="sectionContainer__name">COOKED FOOD</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="sectionContainer__box">
+                        <img src="/images/searchContainer/groc1.jpg" alt="mart">
+                        <p class="sectionContainer__name">MART</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="sectionContainer__box">
+                        <img src="/images/searchContainer/groc1 (1).jpg" alt="drinks">
+                        <p class="sectionContainer__name">DRINKS</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="sectionContainer__box">
+                        <img src="/images/searchContainer/cake3.jpg" alt="bakery">
+                        <p class="sectionContainer__name">BAKERY</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </section>
+
+    <section class="food">
+        <div class="foodContent">
+            <div class="foodContent__title">Newly Added</div>
+            <div class="foodContent__boxes">
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/newAdded/Roti.jpg" alt="Tandoori Roti">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Tandoori Roti, 2 Pieces</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Roti</a></li>
+                        <li><a href="#">Chapati</a></li>
+                        <li><a href="#">Bread</a></li>
+                        <li><a href="#">Indian Cuisine</a></li>
+                        <li><a href="#">Nepali Food</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 60</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/newAdded/carbonara.jpg" alt="carbonara">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Chicken Spaghetti Carbonara</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Carbonara</a></li>
+                        <li><a href="#">Spaghetti</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 399</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/newAdded/Plain_naan.jpg" alt="Plain Naan">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Plain Naan</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Roti</a></li>
+                        <li><a href="#">Naan</a></li>
+                        <li><a href="#">Chapati</a></li>
+                        <li><a href="#">Snacks</a></li>
+                        <li><a href="#">Light</a></li>
+                        <li><a href="#">Dinner</a></li>
+                        <li><a href="#">Indian</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 90</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/newAdded/butter_naan.jpg" alt="Butter Naan">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Butter Naan</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Roti</a></li>
+                        <li><a href="#">Naan</a></li>
+                        <li><a href="#">Chapati</a></li>
+                        <li><a href="#">Butter</a></li>
+                        <li><a href="#">Snacks</a></li>
+                        <li><a href="#">Light</a></li>
+                        <li><a href="#">Dinner</a></li>
+                        <li><a href="#">Indian</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 110</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foodContent">
+            <div class="foodContent__title">Best In Town</div>
+            <div class="foodContent__boxes">
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/bestInTown/1.jpg" alt="Chicken Kurkure">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Chicken Kurkure</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Spicy</a></li>
+                        <li><a href="#">Crunchy</a></li>
+                        <li><a href="#">Chicken</a></li>
+                        <li><a href="#">Snacks</a></li>
+                        <li><a href="#">Sitan</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 375</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/bestInTown/brownie_2s1tbNO.jpg" alt="Khaanpin's Special Fudgy Walnut Brownie">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Khaanpin's Special Fudgy Walnut Brownie</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Dessert</a></li>
+                        <li><a href="#">Pastry</a></li>
+                        <li><a href="#">Brownie</a></li>
+                        <li><a href="#">Diet</a></li>
+                        <li><a href="#">Healthy</a></li>
+                        <li><a href="#">Sweets</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 250</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/bestInTown/mirchifries.jpg" alt="Mirchi Fries">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Mirchi Fries</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Veg</a></li>
+                        <li><a href="#">Chips Chilly</a></li>
+                        <li><a href="#">Snacks</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 220</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/bestInTown/chickenlollypop.jpg" alt="Chicken Lolly Jumbo">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Chicken Lolly Jumbo (8pcs)</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Drumstick</a></li>
+                        <li><a href="#">Chicken Fried</a></li>
+                        <li><a href="#">Lollipop</a></li>
+                        <li><a href="#">Snacks</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 499</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foodContent">
+            <div class="foodContent__title">Sweet Tooth</div>
+            <div class="foodContent__boxes">
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/sweetTooth/white_chocolate_pastry.jpg" alt="White Chocolate Pastry">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">White Chocolate Pastry</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Pastry</a></li>
+                        <li><a href="#">Dessert</a></li>
+                        <li><a href="#">Sweet</a></li>
+                        <li><a href="#">Cakes</a></li>
+                        <li><a href="#">White Chocolate</a></li>
+                        <li><a href="#">White Sweets</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 180</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/sweetTooth/default-img.2f45a7de.jpg" alt="Chocolate Pastry">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Chocolate </div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Pastry</a></li>
+                        <li><a href="#">Dessert</a></li>
+                        <li><a href="#">Sweets</a></li>
+                        <li><a href="#">Cakes</a></li>
+                        <li><a href="#">Chocolates</a></li>
+                        <li><a href="#">Final Course</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 160</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/sweetTooth/default-img.2f45a7de.jpg" alt="Black Forest Pastry">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Black Forest Pastry</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Pastry</a></li>
+                        <li><a href="#">Dessert</a></li>
+                        <li><a href="#">Sweet</a></li>
+                        <li><a href="#">Cakes</a></li>
+                        <li><a href="#">Black Forest</a></li>
+                        <li><a href="#">Sweets</a></li>
+                        <li><a href="#">Cake Slice</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 120</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/sweetTooth/white_forest_pastry.jpg" alt="White Forest Pastry">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">White Forest Pastry</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Pastry</a></li>
+                        <li><a href="#">Dessert</a></li>
+                        <li><a href="#">Sweet</a></li>
+                        <li><a href="#">Cakes</a></li>
+                        <li><a href="#">White Forest</a></li>
+                        <li><a href="#">Sweets</a></li>
+                        <li><a href="#">Cake Slice</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 140</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foodContent">
+            <div class="foodContent__title">Top Sellers</div>
+            <div class="foodContent__boxes">
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/topSeller/5.jpg" alt="Pringles Medium">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Pringles Medium Chips, 110gm (Sco)</div>
+                    <div class="foodContent__tags">
+                    </div>
+                    <div class="foodContent__price">Rs. 225</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/topSeller/2020-05-11_19.26.20.jpg" alt="Pringles Medium">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Pringles Medium Chips, 110gm (ORG)</div>
+                    <div class="foodContent__tags">
+                    </div>
+                    <div class="foodContent__price">Rs. 225</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/topSeller/momoplatter.jpg" alt="Mom Platter">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Momo Platter Chicken ( 5 Pieces Steam, 5 Pieces Hot Garlic, 5 Pieces Fried</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Momo Combo</a></li>
+                        <li><a href="#">Momo Platter</a></li>
+                        <li><a href="#">Momo Set</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 320</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/topSeller/3_0bUoTxB.jpg" alt="Hawaiian Pizza">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Hawaiian Pizza</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Pineapple</a></li>
+                        <li><a href="#">Ham</a></li>
+                        <li><a href="#">Hawaiian Pizza</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 700</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foodContent">
+            <div class="foodContent__title">Spicy Puch</div>
+            <div class="foodContent__boxes">
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/spicyPunch/photo6154198672561252940.jpg" alt="Spicy Chicken Pizza">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Spicy Chicken Pizza</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Pizza</a></li>
+                        <li><a href="#">Spicy</a></li>
+                        <li><a href="#">Chicken Pizza</a></li>
+                        <li><a href="#">Italian Pizza</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 680</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/spicyPunch/chicken_chilly.jpg" alt="Sausage Chilly Chicken">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Sausage Chilly Chicken</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Sausage</a></li>
+                        <li><a href="#">Spicy</a></li>
+                        <li><a href="#">Snacks</a></li>
+                        <li><a href="#">Chilly</a></li>
+                        <li><a href="#">Chicken</a></li>
+                        <li><a href="#">Snacks</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 295</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/spicyPunch/hotgarlicchickenmomo.jpg" alt="Hot Garlic Chicken Momo">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Hot Garlic Chicken Momo</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Spicy</a></li>
+                        <li><a href="#">Chilly Momo</a></li>
+                        <li><a href="#">Snacks</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 90</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/spicyPunch/hotgarlicchickenwings.jpg" alt="Hot Garlic Chilly Chicken Wings">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Hot Garlic Chilly Chicken Wings</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Spicy</a></li>
+                        <li><a href="#">Snacks</a></li>
+                        <li><a href="#">Chicken</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 310</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foodContent">
+            <div class="foodContent__title">Fish 'n Fun</div>
+            <div class="foodContent__boxes">
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/fisnNfun/default-img.2f45a7de.jpg" alt="Fish Burger">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Fish Burger</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Burger</a></li>
+                        <li><a href="#">Fish</a></li>
+                        <li><a href="#">Snacks</a></li>
+                        <li><a href="#">Light</a></li>
+                        <li><a href="#">Dinner</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 349</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/fisnNfun/Fish_Finger.jpg" alt="Fish Finger">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Fish Finger</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Fish</a></li>
+                        <li><a href="#">Finger</a></li>
+                        <li><a href="#">Snack</a></li>
+                        <li><a href="#">Light</a></li>
+                        <li><a href="#">Dinner</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 410</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foodContent">
+            <div class="foodContent__title">Classy Bunch</div>
+            <div class="foodContent__boxes">
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/classyBunch/IMG_20200606_120906_361.jpg" alt="Buff Momo">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Buff Momo</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Momo</a></li>
+                        <li><a href="#">Buff</a></li>
+                        <li><a href="#">Nepali Food</a></li>
+                        <li><a href="#">Snacks</a></li>
+                        <li><a href="#">Mitho Momo</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 230</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/classyBunch/DSC_1793-Edit-Edit.jpg" alt="Chicken Fried Rice">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Chicken Fried Rice</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Rice</a></li>
+                        <li><a href="#">Fried Rice</a></li>
+                        <li><a href="#">Chicken</a></li>
+                        <li><a href="#">Light Snacks</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 280</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/classyBunch/sausages.jpg" alt="Chicken Sausage">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Chicken Sausage (3 Pc)</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Sausage</a></li>
+                        <li><a href="#">Chorizo</a></li>
+                        <li><a href="#">Eats</a></li>
+                        <li><a href="#">Foods</a></li>
+                        <li><a href="#">Hungry</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 225</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/classyBunch/IMG_20200611_154856_305.jpg" alt="Chicken Chowmein">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Chicken Chowmein</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Chowmien</a></li>
+                        <li><a href="#">Noodles</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 230</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foodContent">
+            <div class="foodContent__title">Newari Delicacies</div>
+            <div class="foodContent__boxes">
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/newariDelicacies/DSC_1793-Edit-Edit.jpg" alt="Bara">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Bara, 2 Pieces</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Newari Dish</a></li>
+                        <li><a href="#">Bara</a></li>
+                        <li><a href="#">Newa</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 150</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/newariDelicacies/buffchoila.jpg" alt="buffchoila">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Buff Choila With Chuira</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Spicy</a></li>
+                        <li><a href="#">Choila</a></li>
+                        <li><a href="#">Newari</a></li>
+                        <li><a href="#">Buff</a></li>
+                        <li><a href="#">Piro</a></li>
+                        <li><a href="#">Spicy</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 280</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foodContent">
+            <div class="foodContent__title">Combo Splash</div>
+            <div class="foodContent__boxes">
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/comboSplash/mutton_rice_combo_JKSveBm.jpg" alt="Mutton Rice Combo">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Mutton Rice Combo (1 Jeera Rice, 1 Butter Dal Fry, 1 Mutton Curry, 1 Tomato Achaar, Dahi And Salad)</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Khana Set</a></li>
+                        <li><a href="#">Bhuja</a></li>
+                        <li><a href="#">Bhaat</a></li>
+                        <li><a href="#">Nepali Khana Set</a></li>
+                        <li><a href="#">Nepali Thali Set</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 849</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/comboSplash/Chicken_Rice_Combo_.jpg" alt="Chicken Rice Combo">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Chicken Rice Combo</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Combo</a></li>
+                        <li><a href="#">Chicken</a></li>
+                        <li><a href="#">Combo Pack</a></li>
+                        <li><a href="#">Curry</a></li>
+                        <li><a href="#">Rice</a></li>
+                        <li><a href="#">Nepali Khana Set</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 549</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foodContent">
+            <div class="foodContent__title">Bhaat Power 24 Hour</div>
+            <div class="foodContent__boxes">
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/bhaatPower/Chicken_Rice_Combo_ (1).jpg" alt="Chicken_Rice_Combo_ (1)">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Chicken Rice Combo (1 Jeera Rice, 1 Chicken Curry, 1 Butter Dal Fry, 1 Tomato Achar, Dahi And Salad)</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Combo</a></li>
+                        <li><a href="#">Chicken</a></li>
+                        <li><a href="#">Combo Pack</a></li>
+                        <li><a href="#">Curry</a></li>
+                        <li><a href="#">Rice</a></li>
+                        <li><a href="#">Nepali Khana Set</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 549</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/bhaatPower/IMG_20200611_154904_128.jpg" alt="Egg Curry">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Egg Curry</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Egg</a></li>
+                        <li><a href="#">Curry</a></li>
+                        <li><a href="#">Gravy</a></li>
+                        <li><a href="#">Anda</a></li>
+                        <li><a href="#">Tarkari</a></li>
+                        <li><a href="#">Mitho</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 280</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/bhaatPower/IMG_20200611_154907_406.jpg" alt="Matar Paneer Curry">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Matar Paneer Curry</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Veg</a></li>
+                        <li><a href="#">Vegetarian</a></li>
+                        <li><a href="#">Paneer</a></li>
+                        <li><a href="#">Curry</a></li>
+                        <li><a href="#">Matar</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 310</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+                <div class="foodContent__box">
+                    <div class="foodContent__img">
+                        <a href="#">
+                            <img src="/images/foods/bhaatPower/jeerarice.jpg" alt="Jeera Rice">
+                        </a>
+                    </div>
+                    <div class="foodContent__name">Jeera Rice</div>
+                    <div class="foodContent__tags">
+                        <li><a href="#">Rice</a></li>
+                        <li><a href="#">Jeera</a></li>
+                        <li><a href="#">Food</a></li>
+                        <li><a href="#">Bhuja</a></li>
+                        <li><a href="#">Chawal</a></li>
+                        <li><a href="#">Bhaat</a></li>
+                    </div>
+                    <div class="foodContent__price">Rs. 110</div>
+                    <div class="foodContent__add">
+                        <button type="submit" class="foodContent__addButton">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footerContent">
+            <h2>#FeedYourHustle Delivering 24 Hours!</h2>
+            <h4>Breakfast, Lunch, Dinner, Latenight Munchies or Custom Bulk Order, Call (+977)1 5970770 / 9801225225
+                [KTM] / 9802838383 [PKR]
+                We have something for everyone!</h4>
+            <h3>We're Open 24 Hours, 365 Days!</h3>
+            <div class="footerLinks">
+                <a href="#">KATHMANDU</a>
+                <a href="#">POKHARA</a>
+            </div>
+            <h4>Corporate Contact : hello[at]khaanpin.com</h4>
+            <div class="footerLinks">
+                <a href="#">BLOG</a>
+                <a href="#">JOBS</a>
+                <a href="#">ANDROID APP</a>
+            </div>
+            <div class="footerLinks mediaLinks">
+                <a href="#">
+                    <img src="/images/socialMedias/facebook.png" alt="Facebook">
+                </a>
+                <a href="#">
+                    <img src="/images/socialMedias/instagram.png" alt="Instagram">
+                </a>
+                <a href="#">
+                    <img src="/images/socialMedias/twitter.png" alt="Twitter">
+                </a>
+            </div>
+            <div class="footerLinks">
+                <a href="#">FAQ</a>
+                <a href="#">REFUND AND CANCELLATIONS</a>
+            </div>
+            <p class="copyright">&copy; Khaanpin 2021</p>
+            <p>0.2.14</p>
+        </div>
+    </section>
+
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>
